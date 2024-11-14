@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border: 1px solid;
+    gap: 20px;
+    
+}
+.multiplefield{
+    display: flex;
+    justify-content: space-between;
+}
+.fieldcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.fieldcontainer label
+{
+    font-weight: 700;
+}
+.title{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+.submitbutton{
+    background-color: #009cff;
+    padding: 10px;
+    border-radius: 16px;
+    border: none;
+    color: white;
+}
