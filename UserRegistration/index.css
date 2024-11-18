@@ -1,16 +1,40 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
 .container{
     display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 400px;
-    border: 1px solid;
-    gap: 20px;
-    
+    height: 100%;
+    width: 100%;    
 }
-.multiplefield{
+
+.formcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;    
+    flex-direction: column;
+}
+
+.registrationform{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.field{
     display: flex;
     justify-content: space-between;
 }
+
 .fieldcontainer{
     display: flex;
     flex-direction: column;
@@ -31,4 +55,29 @@
     border-radius: 16px;
     border: none;
     color: white;
+    cursor: pointer;
+}
+
+.error{
+    font-size: 13px;
+    color: red;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px; /* Adds padding inside the input field */
+    border: 2px solid #ccc; /* Adds a border with a light gray color */
+    border-radius: 5px; /* Adds rounded corners */
+    font-size: 16px; /* Increases text size */
+    width: 100%; /* Makes the input fields stretch to fill the container */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    margin-bottom: 10px; /* Adds spacing between input fields */
+    min-width: 350px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007BFF; /* Changes border color on focus */
+    outline: none; /* Removes the default blue outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adds a subtle glow effect */
 }
