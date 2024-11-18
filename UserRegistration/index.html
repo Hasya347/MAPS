@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Forms</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="formcontainer">
         <div class="title">Registration</div>
-        <div class="multiplefield">
+        <form class="registrationform" id="registerform">
+          <div class="field">
             <div class="fieldcontainer">
-                <label for="firstname">First Name*</label>
-                <input type="text" placeholder="FirstName" id="firstname"/>
+              <label for="firstname">First Name*</label>
+              <input type="text" placeholder="FirstName" id="firstname" />
+              <div class="error" id="firstnameerror"></div>
+            </div>
+
+            <div class="fieldcontainer">
+              <label for="lastname">last Name*</label>
+              <input type="text" placeholder="Last Name" id="lastname" />
+              <div class="error" id="lastnameerror"></div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="fieldcontainer">
+              <label for="email">Your Email*</label>
+              <input type="text" placeholder="XYZ@sample.com" id="email" />
+              <div class="error" id="emailerror"></div>
+            </div>
+
+            <div class="fieldcontainer">
+              <label for="phonenumber">Phone Number</label>
+              <input type="text" placeholder="xxx xxx xxxx" id="phonenumber" />
+              <div class="error" id="phoneerror"></div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="fieldcontainer">
+              <label for="annualincome">Annual Income*</label>
+              <input
+                type="text"
+                placeholder="Annual income"
+                id="annualincome"
+              />
+              <div class="error" id="annualincomeerror"></div>
+            </div>
+
+            <div class="fieldcontainer">
+              <label for="loanamount">Loan Amount*</label>
+              <input type="number" placeholder="Loan Amount" id="loanamount" />
+              <div class="error" id="loanamounterror"></div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="fieldcontainer">
+              <label for="loantenure">Loan Tenure*</label>
+              <input type="number" placeholder="Loan Tenure" id="loantenure" />
+              <div class="error" id="tenureerror"></div>
             </div>
             <div class="fieldcontainer">
-                <label for="lastname">last Name*</label>
-                <input type="text" placeholder="Last Name" id="lastname"/>
+              <label for="propertyvalue">Property value*</label>
+              <input
+                type="number"
+                placeholder="property value"
+                id="propertyvalue"
+              />
+              <div class="error" id="propertyvalueerror"></div>
             </div>
-        </div>
-        <div class="field">
-            <div class="fieldcontainer">
-                <label for="email">Your Email*</label>
-                <input type="text" placeholder="XYZ@sample.com" id="email"/>
-            </div>
-        </div>
-        <div class="field">
-            <div class="fieldcontainer">
-                <label for="username">User Name*</label>
-                <input type="text" placeholder="User Name" id="username"/>
-            </div>
-        </div>
-        <div class="multiplefield">
-            <div class="fieldcontainer">
-                <label for="password">Password*</label>
-                <input type="password" placeholder="Password" id="password"/>
-            </div>
-            <div class="fieldcontainer">
-                <label for="Changepassword">Confirm password*</label>
-                <input type="password" placeholder="Confirmpassword" id="Changepassword"/>
-            </div>
-        </div>
-        <button class="submitbutton">Register</button>
-       </div>
-</body>
+          </div>
+          <button class="submitbutton" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
