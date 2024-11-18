@@ -21,7 +21,9 @@ function addNewTask(taskName) {
 
     // Add eventlistner to the delete button to delete the li element from the todolist
     deleteBtn.addEventListener('click', function () {
-        todoList.removeChild(newListItem)
+        if (confirm('Are you sure you want to delete this task?')) {
+            todoList.removeChild(newListItem)
+        }
     })
 
 
@@ -46,6 +48,16 @@ function addNewTask(taskName) {
 }
 
 addBtn.addEventListener('click', function () {
-    addNewTask(taskInput.value)
-    taskInput.value = ''
+    if (taskInput.value.trim() !== '') {
+        addNewTask(taskInput.value.trim())
+        taskInput.value = ''
+    } else {
+        alert('Task cannot be empty!')
+    }
+})
+taskInput.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter' && taskInput.value.trim() !== '') {
+        addNewTask(taskInput.value.trim())
+        taskInput.value = ''
+    }
 })
