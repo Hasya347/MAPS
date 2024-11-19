@@ -49,14 +49,14 @@ document.getElementById("registerform").addEventListener("submit", function (sub
         document.getElementById('phoneerror').textContent = ''
     }
 
-    if (isNaN(annualIncome) || annualIncome <= 1000) {
+    if (isNaN(annualIncome) || annualIncome <= 10000) {
         document.getElementById('annualincomeerror').textContent = "Enter a valid income"
         isValid = false
     } else {
         document.getElementById('annualincomeerror').textContent = ''
     }
 
-    if (isNaN(loanAmount) || loanAmount <= 1000) {
+    if (isNaN(loanAmount) || loanAmount <= 10000) {
         document.getElementById('loanamounterror').textContent = "Enter a valid loan amount"
         isValid = false
     } else {
@@ -70,7 +70,7 @@ document.getElementById("registerform").addEventListener("submit", function (sub
         document.getElementById('tenureerror').textContent = ''
     }
 
-    if (isNaN(propertyValue) || propertyValue >= 30) {
+    if (isNaN(propertyValue) || propertyValue <= 10000) {
         document.getElementById('propertyvalueerror').textContent = "Enter a valid value"
         isValid = false
     } else {

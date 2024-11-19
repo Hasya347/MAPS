@@ -68,7 +68,7 @@ input[type="number"] {
     padding: 10px; /* Adds padding inside the input field */
     border: 2px solid #ccc; /* Adds a border with a light gray color */
     border-radius: 5px; /* Adds rounded corners */
-    font-size: 16px; /* Increases text size */
+    font-size: 13px; /* Increases text size */
     width: 100%; /* Makes the input fields stretch to fill the container */
     box-sizing: border-box; /* Ensures padding is included in width calculation */
     margin-bottom: 10px; /* Adds spacing between input fields */
