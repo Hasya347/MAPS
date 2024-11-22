@@ -1,0 +1,47 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.infosection{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.requirements{
+  display: flex;
+  gap: 20px;
+}
+
+.left{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+
+}
+.leftcontents{
+  display: flex;
+  justify-content: space-between;
+}
+.valuecontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.emiValue{
+  display: flex;
+  justify-content: space-between;
+}
+.right{
+ display: flex;
+ flex: 1;
+}
